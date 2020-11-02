@@ -28,6 +28,7 @@ def readLeaderboard():
     return leaderboard
 
 # updating score for specific name; if name not in leaderboard, add as new row
+# write updated leaderboard data to file
 def updateLeaderboard(leaderboard, name, score):
     with open('leaderboard.csv', mode='w') as f:
         writer = csv.writer(f)
@@ -42,6 +43,7 @@ def updateLeaderboard(leaderboard, name, score):
         for row in leaderboard:
             writer.writerow(row)
 
+# update Mike's score to be 100
 def leaderboardExample():
     leaderboard = readLeaderboard()
     print('before update', leaderboard)
