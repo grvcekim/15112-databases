@@ -2,7 +2,11 @@ import csv
 
 '''
 Demo on how to use reader and writer from csv module.
-Uncomment and run one function call at a time to see how leaderboard.csv changes.
+Uncomment and run one function call at a time at the bottom of the file to see 
+how leaderboard.csv changes.
+
+Grace Kim (haeunk@andrew.cmu.edu) 
+Last updated: Fall 20
 '''
 
 def read():
